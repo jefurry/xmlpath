@@ -42,6 +42,11 @@ const (
 	procInstNode
 )
 
+// Name returns the name value of node.
+func (node *Node) Name() xml.Name {
+	return node.name
+}
+
 // String returns the string value of node.
 //
 // The string value of a node is:
